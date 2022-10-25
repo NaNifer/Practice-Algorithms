@@ -1,4 +1,10 @@
 // Write code to print all numbers from 1 to `num`
 // Assume `num` will be a positive number
 
-var logNums = function(num) {};
+var logNums = function (num) {
+    var lowEnd = 1;
+    var arr = [];
+    while (lowEnd <= num) {
+        console.log(arr.push(lowEnd++));
+    }
+};
