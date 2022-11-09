@@ -2,7 +2,6 @@
 // Assume `num` will be a positive number
 
 var logEvenNums = function (num) {
-    let arr = [];
     for (let i = 0; i <= num; i += 2) {
         console.log(i)
     }
