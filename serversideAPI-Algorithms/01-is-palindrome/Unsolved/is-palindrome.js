@@ -15,6 +15,7 @@
 
 
 var isPalindrome = function (str) {
-    return (str === str.split(" ").reverse().toString())
+    return (str === str.split("").reverse().join(''))
 };
+
 
