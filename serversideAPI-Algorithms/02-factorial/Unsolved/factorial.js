@@ -4,6 +4,6 @@ var factorial = function(num) {
     for (i=0; i< num; num--) {
         arr.unshift(num);
     };
-    return arr;
+    return arr
 }
 factorial(10);
