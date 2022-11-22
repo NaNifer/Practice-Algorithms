@@ -1,9 +1,11 @@
 // Write code to create a function that returns the factorial of `num`
 var factorial = function(num) {
-    arr = [];
-    for (i=0; i< num; num--) {
+    let arr = [];
+    let factor = 1;
+    for (i=1; i< num; num--) {
         arr.unshift(num);
+        factor = factor*num;
     };
-    return arr
+    return arr & factor;
 }
 factorial(10);
