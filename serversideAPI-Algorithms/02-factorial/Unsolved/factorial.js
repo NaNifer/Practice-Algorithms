@@ -4,8 +4,8 @@ var factorial = function(num) {
     let factor = 1;
     for (i=1; i< num; num--) {
         arr.unshift(num);
-        factor = factor*num;
+        factor *= num;
     };
-    return arr & factor;
+    return factor;
 }
 factorial(10);
