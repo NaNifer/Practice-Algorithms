@@ -3,7 +3,9 @@
 var characterCount = function(str) {
     let length = str.length+1;
 
-    for (let i = 0; i < length; i++);
+    for (let i = 0; i < length; i++) {
+        
+    }
 
 
 
