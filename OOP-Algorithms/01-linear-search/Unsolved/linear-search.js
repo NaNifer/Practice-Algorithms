@@ -3,8 +3,12 @@
 // else return -1
 // You may not use the `indexOf`, `lastIndexOf` or `includes` methods
 
-var linearSearch = function(arr, target) {
-    for(let i = 0; i <= arr.length; i++){
-       
+var linearSearch = function (arr, target) {
+    for (let i = 0; i <= arr.length; i++) {
+        const firstElement = arr.shift();
+        if (firstElement == target) {
+            return i;
+        }
     }
+    return -1 ;
 };
