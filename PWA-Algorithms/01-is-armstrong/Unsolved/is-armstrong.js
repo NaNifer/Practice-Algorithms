@@ -5,4 +5,14 @@
 
 // TODO: Complete the function below:
 
-var isArmstrong = function(num) {};
+const isArmstrong = function(num) {
+    let str = String(num);
+    let sum = 0;
+  
+    for (let i = 0; i < str.length; i++) {
+      let digit = parseInt(str[i]);
+      sum += digit ** str.length;
+    }
+  
+    return sum === num;
+  };
