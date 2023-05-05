@@ -3,4 +3,15 @@
 
 // TODO: Complete the function below:
 
-var maxProfit = function (prices) {};
+const maxProfit = function (prices) {
+    let smallest = Infinity;
+    let bestProfit = 0;
+  
+    for (let i = 0; i < prices.length; i++) {
+      let price = prices[i];
+      smallest = Math.min(smallest, price);
+      bestProfit = Math.max(bestProfit, price - smallest);
+    }
+  
+    return bestProfit;
+  };
