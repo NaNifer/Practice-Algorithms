@@ -18,12 +18,11 @@ const romanToInt = function (str) {
         let nextNumeral = str[i + 1];
         let currentValue = numerals[currentNumeral];
         let nextValue = numerals[nextNumeral];
-
         if (currentValue < nextValue) {
             result -= currentValue;
-        } 
-        
+        } else {
+            result += currentValue;
+        }
     }
-
     return result;
 };
